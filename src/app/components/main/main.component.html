@@ -1,0 +1,137 @@
+<!-- ABOUT THIS PROJECT MODAL: -->
+<ng-template #aboutModal let-modal>
+    <div class="aboutModalHeader">
+        <h4>About this project</h4>
+        <hr>
+    </div>
+    <div class="aboutModalBody">
+        <!-- TODO: Update 'About this project' text -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </div>
+    <div class="aboutModalFooter">
+        <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Close</button>
+    </div>
+</ng-template>
+
+<!-- MAIN CONTENT: -->
+<div *ngIf="dataRetrievalComplete" class="row">
+    <!-- HEADER AREA: -->
+    <div class="col-12">
+        <div class="headerContainer">
+            <h1>JSON Practice</h1>
+            <button (click)="triggerModal(aboutModal)" type="button" class="btn btn-link">About this project</button>
+        </div>
+    </div>
+    <!-- CHARACTER TILES: -->
+    <!-- Display Harry and Lord Voldemort character cards at the top of the page: -->
+    <div *ngFor="let interactiveCharacter of interactiveCharacters | keyvalue" class="col-12 col-sm-6">
+        <div class="buttonContainer">
+            <!-- TODO: Complete Bonus Challenge 1: -->
+            <button *ngIf="interactiveCharacter.value.first_name === 'Harry'" type="button"
+                class="btn btn-primary interactiveButton">
+                "Oculus Reparo"
+                <br />
+                <span class="buttonSmallText">(Repair Harry's glasses)</span>
+            </button>
+            <!-- TODO: Complete Bonus Challenge 2: -->
+            <button *ngIf="interactiveCharacter.value.first_name === 'Lord'" type="button"
+                class="btn btn-danger interactiveButton">
+                Censor Voldemort's name
+                <br />
+                <span class="buttonSmallText">(Recommended for safety)</span>
+            </button>
+        </div>
+        <div class="characterCard">
+            <h2>{{ interactiveCharacter.value.first_name + " " + interactiveCharacter.value.last_name }}</h2>
+            <img [attr.src]="interactiveCharacter.value.default_photo"
+                [attr.alt]="interactiveCharacter.value.first_name+' '+interactiveCharacter.value.last_name"
+                class="characterImage" />
+            <!-- TODO: Only if interactive character is a student, show class list: -->
+            <div *ngIf="interactiveCharacter.value.is_student" class="row classCategoryRow">
+              <!-- Currently working on this section -->
+                <div class="col-12 classCategory">
+                    <h4>Core classes:</h4>
+                    <!-- TODO: Replace interactive character hard-coded Title & Professor values -->
+                    <ul *ngFor="let classNames of interactiveCharacter.value.student_classlist.core_classes" class="coreClassesUl">
+                        <li>
+                            <b>Class: </b>
+                            {{classNames.class_name}}
+
+                            <br />
+                            <b>Professor: </b>
+                            {{classNames.professor}}
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div   class="col-12 classCategory">
+                    <h4>Electives:</h4>
+                    <!-- End of the section -->
+                    <!-- TODO: Replace interactive character hard-coded Title & Professor values -->
+                    <ul  *ngFor="let electives of interactiveCharacter.value.student_classlist.electives" class="electivesUl">
+                        <li>
+                            <b>Class:</b>
+                            {{electives.class_name}}
+                            <br />
+                            <b>Professor: </b>
+                            {{electives.professor}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Display the remaining character cards (i.e. Anyone who isn't Harry or Lord Voldemort): -->
+    <div *ngFor="let nonInteractiveCharacter of nonInteractiveCharacters | keyvalue" class="col-12 col-sm-6">
+        <div class="characterCard nonInteractiveCharacterCard">
+            <h2>{{ nonInteractiveCharacter.value.first_name + " " + nonInteractiveCharacter.value.last_name }}</h2>
+            <img [attr.src]="nonInteractiveCharacter.value.default_photo"
+                [attr.alt]="nonInteractiveCharacter.value.first_name+' '+nonInteractiveCharacter.value.last_name"
+                class="characterImage" />
+            <!-- TODO: Only if non-interactive character is a student, show class list: -->
+            <div class="row classCategoryRow">
+                <div class="col-12 classCategory">
+                    <h4>Core classes:</h4>
+                    <!-- TODO: Replace non-interactive character hard-coded Title & Professor values -->
+                    <ul class="coreClassesUl">
+                        <li>
+                            <b>Title: </b>
+                            Placeholder class title
+                            <br />
+                            <b>Professor: </b>
+                            Placeholder professor name
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 classCategory">
+                    <h4>Electives:</h4>
+                    <!-- TODO: Replace non-interactive character hard-coded Title & Professor values -->
+                    <ul class="electivesUl">
+                        <li>
+                            <b>Title: </b>
+                            Placeholder class title
+                            <br />
+                            <b>Professor: </b>
+                            Placeholder professor name
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER AREA: -->
+    <div class="col-12">
+        <div class="footerContainer">
+            <!-- TODO: Personalize footer content -->
+            <p>Placeholder footer content</p>
+        </div>
+    </div>
+</div>

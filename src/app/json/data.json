@@ -1,0 +1,373 @@
+{
+    "characters": {
+        "albus_dumbledore": {
+            "first_name": "Albus",
+            "last_name": "Dumbledore",
+            "default_photo": "../../../assets/images/albus-dumbledore.png",
+            "is_student": false
+        },
+        "draco_malfoy": {
+            "first_name": "Draco",
+            "last_name": "Malfoy",
+            "default_photo": "../../../assets/images/draco-malfoy.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Arithmancy",
+                        "professor": "Septima Vector"
+                    },
+                    {
+                        "class_name": "Care of Magical Creatures",
+                        "professor": "Wilhelmina Grubbly-Plank"
+                    }
+                ]
+            }
+        },
+        "ginny_weasley": {
+            "first_name": "Ginny",
+            "last_name": "Weasley",
+            "default_photo": "../../../assets/images/ginny-weasley.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Care of Magical Creatures",
+                        "professor": "Wilhelmina Grubbly-Plank"
+                    },
+                    {
+                        "class_name": "Divination",
+                        "professor": "Sybill Trelawney"
+                    }
+                ]
+            }
+        },
+        "hagrid": {
+            "first_name": "Hagrid",
+            "last_name": null,
+            "default_photo": "../../../assets/images/hagrid.png",
+            "is_student": false
+        },
+        "harry_potter": {
+            "first_name": "Harry",
+            "last_name": "Potter",
+            "default_photo": "../../../assets/images/harry-potter-broken-glasses.png",
+            "alternate_photo:": "../../../assets/images/harry-potter.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Divination",
+                        "professor": "Sybill Trelawney"
+                    },
+                    {
+                        "class_name": "Muggle Studies",
+                        "professor": "Alecto Carrow"
+                    }
+                ]
+            }
+        },
+        "hermoine_granger": {
+            "first_name": "Hermoine",
+            "last_name": "Granger",
+            "default_photo": "../../../assets/images/hermoine-granger.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Muggle Studies",
+                        "professor": "Alecto Carrow"
+                    },
+                    {
+                        "class_name": "Study of Ancient Runes",
+                        "professor": "Bathsheda Babbling"
+                    }
+                ]
+            }
+        },
+        "lord_voldemort": {
+            "first_name": "Lord",
+            "last_name": "Voldemort",
+            "alternate_name1": "You-Know-Who",
+            "alternate_name2": "He-Who-Must-Not-Be-Named",
+            "default_photo": "../../../assets/images/lord-voldemort.png",
+            "is_student": false
+        },
+        "luna_lovegood": {
+            "first_name": "Luna",
+            "last_name": "Lovegood",
+            "default_photo": "../../../assets/images/luna-lovegood.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Arithmancy",
+                        "professor": "Septima Vector"
+                    },
+                    {
+                        "class_name": "Study of Ancient Runes",
+                        "professor": "Bathsheda Babbling"
+                    }
+                ]
+            }
+        },
+        "neville_longbottom": {
+            "first_name": "Neville",
+            "last_name": "Longbottom",
+            "default_photo": "../../../assets/images/neville-longbottom.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Arithmancy",
+                        "professor": "Septima Vector"
+                    },
+                    {
+                        "class_name": "Care of Magical Creatures",
+                        "professor": "Wilhelmina Grubbly-Plank"
+                    }
+                ]
+            }
+        },
+        "professor-mcgonagall": {
+            "first_name": "Professor",
+            "last_name": "Mcgonagall",
+            "default_photo": "../../../assets/images/professor-mcgonagall.png",
+            "is_student": false
+        },
+        "ron_weasley": {
+            "first_name": "Ron",
+            "last_name": "Weasley",
+            "default_photo": "../../../assets/images/ron-weasley.png",
+            "is_student": true,
+            "student_classlist": {
+                "core_classes": [
+                    {
+                        "class_name": "Astronomy",
+                        "professor": "Aurora Sinistra"
+                    },
+                    {
+                        "class_name": "Charms",
+                        "professor": "Filius Flitwick"
+                    },
+                    {
+                        "class_name": "Defence Against the Dark Arts",
+                        "professor": "Alastor Moody"
+                    },
+                    {
+                        "class_name": "Herbology",
+                        "professor": "Pomona Sprout"
+                    },
+                    {
+                        "class_name": "History of Magic",
+                        "professor": "Cuthbert Binns"
+                    },
+                    {
+                        "class_name": "Potions",
+                        "professor": "Severus Snape"
+                    },
+                    {
+                        "class_name": "Transfiguration",
+                        "professor": "Minerva McGonagall"
+                    }
+                ],
+                "electives": [
+                    {
+                        "class_name": "Muggle Studies",
+                        "professor": "Alecto Carrow"
+                    },
+                    {
+                        "class_name": "Study of Ancient Runes",
+                        "professor": "Bathsheda Babbling"
+                    }
+                ]
+            }
+        },
+        "severus_snape": {
+            "first_name": "Severus",
+            "last_name": "Snape",
+            "default_photo": "../../../assets/images/severus-snape.png",
+            "is_student": false
+        }
+    }
+}

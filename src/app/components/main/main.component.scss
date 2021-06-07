@@ -1,0 +1,71 @@
+.aboutModalHeader {
+    padding: 30px 30px 0;
+    text-align: center;
+}
+
+.aboutModalBody {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.aboutModalFooter {
+    padding: 0 0 15px;
+    text-align: center;
+}
+
+.headerContainer {
+    padding: 30px 0 15px;
+    text-align: center;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+button {
+    margin: 15px 0;
+}
+
+.interactiveButton {
+    min-height: 60px;
+}
+
+.buttonSmallText {
+    font-size: 12px;
+}
+
+.characterCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.characterCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nonInteractiveCharacterCard {
+    margin-top: 20px;
+}
+
+.characterImage {
+    max-height: 250px;
+}
+
+.classCategoryRow {
+    padding-top: 15px;
+}
+
+.classCategory {
+    text-align: left;
+}
+
+.electivesUl {
+    margin-bottom: 0;
+}
+
+.footerContainer {
+    padding: 30px 30px 0;
+    text-align: center;
+}
