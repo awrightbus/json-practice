@@ -52,7 +52,7 @@
         </div>
         <div class="characterCard">
             <h2>{{ interactiveCharacter.value.first_name + " " + interactiveCharacter.value.last_name }}</h2>
-            <img  [attr.src]="interactiveCharacter.value.default_photo"
+            <img [attr.src]='harrysGlassesAreRepaired == true && interactiveCharacter.value.first_name === "Harry" ? interactiveCharacter.value.alternate_photo : interactiveCharacter.value.default_photo'
                 [attr.alt]="interactiveCharacter.value.first_name+' '+interactiveCharacter.value.last_name"
                 class="characterImage" />
             <!-- TODO: Only if interactive character is a student, show class list: -->
