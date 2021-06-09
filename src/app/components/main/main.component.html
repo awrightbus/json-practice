@@ -44,14 +44,14 @@
             <!-- TODO: Complete Bonus Challenge 2: -->
             <button *ngIf="interactiveCharacter.value.first_name === 'Lord'" type="button"
                 class="btn btn-danger interactiveButton" (click)='voldemortIsCensored = true'>
-                Censor Voldemort's name
+                Censor His name
                 <br />
                 <span class="buttonSmallText">(Recommended for safety)</span>
 
             </button>
         </div>
         <div class="characterCard">
-            <h2>{{ interactiveCharacter.value.first_name + " " + interactiveCharacter.value.last_name }}</h2>
+            <h2>{{voldemortIsCensored && interactiveCharacter.value.first_name == 'Lord' ? interactiveCharacter.value.alternate_name2 : interactiveCharacter.value.first_name + " " + interactiveCharacter.value.last_name }}</h2>
             <img [attr.src]='harrysGlassesAreRepaired == true && interactiveCharacter.value.first_name === "Harry" ? interactiveCharacter.value.alternate_photo : interactiveCharacter.value.default_photo'
                 [attr.alt]="interactiveCharacter.value.first_name+' '+interactiveCharacter.value.last_name"
                 class="characterImage" />
