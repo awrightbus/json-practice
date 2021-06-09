@@ -35,7 +35,7 @@ export class MainComponent implements OnInit {
     this.dataRetrievalComplete = true;
 
 
-    console.log(this.interactiveCharacters.harry_potter.student_classlist.core_classes,'interactive characters console log');
+
   }
 
   // The triggerModal & getDismissReason functions are related to the about modal:

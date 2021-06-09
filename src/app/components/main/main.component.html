@@ -35,22 +35,24 @@
         <div class="buttonContainer">
             <!-- TODO: Complete Bonus Challenge 1: -->
             <button *ngIf="interactiveCharacter.value.first_name === 'Harry'" type="button"
-                class="btn btn-primary interactiveButton">
+                class="btn btn-primary interactiveButton" (click)='harrysGlassesAreRepaired = true'>
                 "Oculus Reparo"
                 <br />
                 <span class="buttonSmallText">(Repair Harry's glasses)</span>
+
             </button>
             <!-- TODO: Complete Bonus Challenge 2: -->
             <button *ngIf="interactiveCharacter.value.first_name === 'Lord'" type="button"
-                class="btn btn-danger interactiveButton">
+                class="btn btn-danger interactiveButton" (click)='voldemortIsCensored = true'>
                 Censor Voldemort's name
                 <br />
                 <span class="buttonSmallText">(Recommended for safety)</span>
+
             </button>
         </div>
         <div class="characterCard">
             <h2>{{ interactiveCharacter.value.first_name + " " + interactiveCharacter.value.last_name }}</h2>
-            <img [attr.src]="interactiveCharacter.value.default_photo"
+            <img  [attr.src]="interactiveCharacter.value.default_photo"
                 [attr.alt]="interactiveCharacter.value.first_name+' '+interactiveCharacter.value.last_name"
                 class="characterImage" />
             <!-- TODO: Only if interactive character is a student, show class list: -->
@@ -59,8 +61,8 @@
                 <div class="col-12 classCategory">
                     <h4>Core classes:</h4>
                     <!-- TODO: Replace interactive character hard-coded Title & Professor values -->
-                    <ul *ngFor="let classNames of interactiveCharacter.value.student_classlist.core_classes" class="coreClassesUl">
-                        <li>
+                    <ul  class="coreClassesUl">
+                        <li *ngFor="let classNames of interactiveCharacter.value.student_classlist.core_classes">
                             <b>Class: </b>
                             {{classNames.class_name}}
 
@@ -74,10 +76,10 @@
 
                 <div   class="col-12 classCategory">
                     <h4>Electives:</h4>
-                    <!-- End of the section -->
+
                     <!-- TODO: Replace interactive character hard-coded Title & Professor values -->
-                    <ul  *ngFor="let electives of interactiveCharacter.value.student_classlist.electives" class="electivesUl">
-                        <li>
+                    <ul   class="electivesUl">
+                        <li *ngFor="let electives of interactiveCharacter.value.student_classlist.electives">
                             <b>Class:</b>
                             {{electives.class_name}}
                             <br />
@@ -97,30 +99,30 @@
                 [attr.alt]="nonInteractiveCharacter.value.first_name+' '+nonInteractiveCharacter.value.last_name"
                 class="characterImage" />
             <!-- TODO: Only if non-interactive character is a student, show class list: -->
-            <div class="row classCategoryRow">
+            <div *ngIf="nonInteractiveCharacter.value.is_student" class="row classCategoryRow">
                 <div class="col-12 classCategory">
                     <h4>Core classes:</h4>
                     <!-- TODO: Replace non-interactive character hard-coded Title & Professor values -->
-                    <ul class="coreClassesUl">
-                        <li>
-                            <b>Title: </b>
-                            Placeholder class title
+                    <ul  class="coreClassesUl">
+                        <li *ngFor="let className of nonInteractiveCharacter.value.student_classlist.core_classes">
+                            <b>Class: </b>
+                            {{className.class_name}}
                             <br />
                             <b>Professor: </b>
-                            Placeholder professor name
+                            {{className.professor}}
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 classCategory">
                     <h4>Electives:</h4>
                     <!-- TODO: Replace non-interactive character hard-coded Title & Professor values -->
-                    <ul class="electivesUl">
-                        <li>
-                            <b>Title: </b>
-                            Placeholder class title
+                    <ul  class="electivesUl">
+                        <li *ngFor="let elective of nonInteractiveCharacter.value.student_classlist.electives">
+                            <b>Class: </b>
+                            {{elective.class_name}}
                             <br />
                             <b>Professor: </b>
-                            Placeholder professor name
+                            {{elective.professor}}
                         </li>
                     </ul>
                 </div>
