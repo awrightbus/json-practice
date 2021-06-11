@@ -3,13 +3,13 @@
         "albus_dumbledore": {
             "first_name": "Albus",
             "last_name": "Dumbledore",
-            "default_photo": "../../../assets/images/albus-dumbledore.png",
+            "default_photo": "assets/images/albus-dumbledore.png",
             "is_student": false
         },
         "draco_malfoy": {
             "first_name": "Draco",
             "last_name": "Malfoy",
-            "default_photo": "../../../assets/images/draco-malfoy.png",
+            "default_photo": "assets/images/draco-malfoy.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -57,7 +57,7 @@
         "ginny_weasley": {
             "first_name": "Ginny",
             "last_name": "Weasley",
-            "default_photo": "../../../assets/images/ginny-weasley.png",
+            "default_photo": "assets/images/ginny-weasley.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -105,14 +105,14 @@
         "hagrid": {
             "first_name": "Hagrid",
             "last_name": null,
-            "default_photo": "../../../assets/images/hagrid.png",
+            "default_photo": "assets/images/hagrid.png",
             "is_student": false
         },
         "harry_potter": {
             "first_name": "Harry",
             "last_name": "Potter",
             "default_photo": "assets/images/harry-potter-broken-glasses.png",
-            "alternate_photo": "../../../assets/images/harry-potter.png",
+            "alternate_photo": "assets/images/harry-potter.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -160,7 +160,7 @@
         "hermoine_granger": {
             "first_name": "Hermoine",
             "last_name": "Granger",
-            "default_photo": "../../../assets/images/hermoine-granger.png",
+            "default_photo": "assets/images/hermoine-granger.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -210,13 +210,13 @@
             "last_name": "Voldemort",
             "alternate_name1": "You-Know-Who",
             "alternate_name2": "He-Who-Must-Not-Be-Named",
-            "default_photo": "../../../assets/images/lord-voldemort.png",
+            "default_photo": "assets/images/lord-voldemort.png",
             "is_student": false
         },
         "luna_lovegood": {
             "first_name": "Luna",
             "last_name": "Lovegood",
-            "default_photo": "../../../assets/images/luna-lovegood.png",
+            "default_photo": "assets/images/luna-lovegood.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -264,7 +264,7 @@
         "neville_longbottom": {
             "first_name": "Neville",
             "last_name": "Longbottom",
-            "default_photo": "../../../assets/images/neville-longbottom.png",
+            "default_photo": "assets/images/neville-longbottom.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -312,13 +312,13 @@
         "professor-mcgonagall": {
             "first_name": "Professor",
             "last_name": "Mcgonagall",
-            "default_photo": "../../../assets/images/professor-mcgonagall.png",
+            "default_photo": "assets/images/professor-mcgonagall.png",
             "is_student": false
         },
         "ron_weasley": {
             "first_name": "Ron",
             "last_name": "Weasley",
-            "default_photo": "../../../assets/images/ron-weasley.png",
+            "default_photo": "assets/images/ron-weasley.png",
             "is_student": true,
             "student_classlist": {
                 "core_classes": [
@@ -366,7 +366,7 @@
         "severus_snape": {
             "first_name": "Severus",
             "last_name": "Snape",
-            "default_photo": "../../../assets/images/severus-snape.png",
+            "default_photo": "assets/images/severus-snape.png",
             "is_student": false
         }
     }
