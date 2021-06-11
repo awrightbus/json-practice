@@ -111,7 +111,7 @@
         "harry_potter": {
             "first_name": "Harry",
             "last_name": "Potter",
-            "default_photo": "../../assets/images/harry-potter-broken-glasses.png",
+            "default_photo": "../../../assets/images/harry-potter-broken-glasses.png",
             "alternate_photo": "../../../assets/images/harry-potter.png",
             "is_student": true,
             "student_classlist": {
