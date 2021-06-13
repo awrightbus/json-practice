@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import * as unparsedJson from '../../json/data.json';
+import {SortingHatService} from 'src/app/services/sorting-hat.service'
 
 @Component({
   selector: 'app-main',
@@ -19,19 +20,17 @@ export class MainComponent implements OnInit {
   voldemortIsCensored: Boolean = false;
 
   constructor(
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private sortingHatService: SortingHatService
   ) { }
 
   ngOnInit(): void {
+
     let parsedJson = JSON.parse(JSON.stringify(unparsedJson));
     let parsedCharacters = parsedJson.default.characters;
-    Object.keys(parsedCharacters).forEach((key: string) => {
-      if (key === "harry_potter" || key === "lord_voldemort") {
-        this.interactiveCharacters[key] = parsedCharacters[key];
-      } else {
-        this.nonInteractiveCharacters[key] = parsedCharacters[key];
-      }
-    });
+    let sortingHatReturnArray: Array<any>;
+    sortingHatReturnArray = this.sortingHatService.sortingHat(parsedCharacters, this.interactiveCharacters, this.nonInteractiveCharacters);
+    console.log("sortingHatReturnArray: ", sortingHatReturnArray);
     this.dataRetrievalComplete = true;
 
 
